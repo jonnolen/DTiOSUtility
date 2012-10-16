@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'DTiOSUtility' target in the 'DTiOSUtility' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
