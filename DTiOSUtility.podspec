@@ -57,7 +57,7 @@ Pod::Spec.new do |s|
   # the deployment target.
   #
   # s.platform     = :ios, '5.0'
-  s.platform     = :ios
+  s.platform     = :ios, "5.0"
 
   # A list of file patterns which select the source files that should be
   # added to the Pods project. If the pattern is a directory then the
@@ -67,7 +67,7 @@ Pod::Spec.new do |s|
   # over the selected files.
   # (See http://rake.rubyforge.org/classes/Rake/FileList.html.)
   #
-  s.source_files = 'Classes', 'DTiOSUtility/**/*.{h,m}'
+  s.source_files = 'Classes', 'DTiOSUtility/*.{h,m}'
 
   # A list of file patterns which select the header files that should be
   # made available to the application. If the pattern is a directory then the
@@ -78,14 +78,14 @@ Pod::Spec.new do |s|
   # If you do not explicitely set the list of public header files,
   # all headers of source_files will be made public.
   #
-  # s.public_header_files = 'DTiOSUtility/**/*.h'
+  s.public_header_files = 'DTiOSUtility/*.h'
 
   
   # Specify a list of frameworks that the application needs to link
   # against for this Pod to work.
   #
   # s.framework  = 'SomeFramework'
-  # s.frameworks = 'SomeFramework', 'AnotherFramework'
+  s.frameworks = 'UIKit', 'CoreData', 'QuartzCore'
 
   # Specify a list of libraries that the application needs to link
   # against for this Pod to work.
@@ -102,5 +102,7 @@ Pod::Spec.new do |s|
 
   # Finally, specify any Pods that this Pod depends on.
   #
-  # s.dependency 'JSONKit', '~> 1.4'
+
+  s.dependency "TestFlightSDK", "1.1"
+  
 end

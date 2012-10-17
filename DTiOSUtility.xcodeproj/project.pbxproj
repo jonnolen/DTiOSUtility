@@ -83,7 +83,7 @@
 		FC725FCB162ED92F001C1F42 /* DTFetchedResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTFetchedResultsTableViewController.m; sourceTree = "<group>"; };
 		FC725FCE162ED985001C1F42 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FC725FD0162ED9B0001C1F42 /* DTFetchedResultsBasedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTFetchedResultsBasedViewController.m; sourceTree = "<group>"; };
-		FC725FD5162EDA72001C1F42 /* DTiOSUtility.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = DTiOSUtility.podspec; sourceTree = "<group>"; };
+		FC725FD5162EDA72001C1F42 /* DTiOSUtility.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = DTiOSUtility.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
