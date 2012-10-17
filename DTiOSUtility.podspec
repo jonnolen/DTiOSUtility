@@ -8,7 +8,7 @@
 #
 Pod::Spec.new do |s|
   s.name         = "DTiOSUtility"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "Utility classes common across Developer Town internal projects."
   s.description  = "a description."
   s.homepage     = "http://github.com/jonnolen/DTiOSUtility"
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   
   s.author       = { "Jon Nolen" => "jon.nolen@gmail.com" }
-  s.source       = { :git => "https://github.com/jonnolen/DTiOSUtility.git", :commit=>"7066b64"}
+  s.source       = { :git => "https://github.com/jonnolen/DTiOSUtility.git", :commit=>"349ff0c"}
   s.platform     = :ios, "5.0"
   s.source_files = 'Classes', 'DTiOSUtility/*.{h,m}'
 
