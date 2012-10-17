@@ -25,7 +25,7 @@
 @property (nonatomic, strong) NSDate *date;
 
 //Return a DTDateFormatter that will allow a date to be returned in different formats.
-+(DTDateFormatter *)dateFormatterForDate:(NSDate *)date;
++(id)dateFormatterForDate:(NSDate *)date;
 
 //internal helper method that creates an NSDateFormatter for the format string if it
 //doesn't exist, otherwise returns a cached NSDateFormatter.
