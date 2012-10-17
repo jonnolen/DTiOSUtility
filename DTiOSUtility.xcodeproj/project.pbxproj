@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8EE1BCADD46A4679B1E63E55 /* libPods-DTiOSUtilityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B984E84BB9464CBA96C0F2 /* libPods-DTiOSUtilityTests.a */; };
 		F82E899CEEAF4B80A810EF4E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3051203E14CC4F7AA5911083 /* libPods.a */; };
+		FC0C17DE162F55680054720F /* DTDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0C17DD162F55680054720F /* DTDateFormatter.m */; };
 		FC5C4F1A162DDE8F00CD307D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5C4F19162DDE8F00CD307D /* Foundation.framework */; };
 		FC5C4F1F162DDE8F00CD307D /* DTiOSUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC5C4F1E162DDE8F00CD307D /* DTiOSUtility.h */; };
 		FC5C4F29162DDE8F00CD307D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5C4F28162DDE8F00CD307D /* SenTestingKit.framework */; };
@@ -55,6 +56,8 @@
 		3C08F40B00BC4166BDAAB870 /* Pods-DTiOSUtilityTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DTiOSUtilityTests.xcconfig"; path = "Pods/Pods-DTiOSUtilityTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		B3D5D5802503449CB39E8AB3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		E4B984E84BB9464CBA96C0F2 /* libPods-DTiOSUtilityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DTiOSUtilityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0C17DC162F55680054720F /* DTDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDateFormatter.h; sourceTree = "<group>"; };
+		FC0C17DD162F55680054720F /* DTDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTDateFormatter.m; sourceTree = "<group>"; };
 		FC5C4F16162DDE8F00CD307D /* libDTiOSUtility.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDTiOSUtility.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC5C4F19162DDE8F00CD307D /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FC5C4F1D162DDE8F00CD307D /* DTiOSUtility-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DTiOSUtility-Prefix.pch"; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 				FC725FA7162ECD73001C1F42 /* DTPaths.h */,
 				FC725FAB162ECDAE001C1F42 /* DTPaths.m */,
 				FC5C4F1E162DDE8F00CD307D /* DTiOSUtility.h */,
+				FC0C17DC162F55680054720F /* DTDateFormatter.h */,
+				FC0C17DD162F55680054720F /* DTDateFormatter.m */,
 				FC5C4F1C162DDE8F00CD307D /* Supporting Files */,
 			);
 			path = DTiOSUtility;
@@ -342,6 +347,7 @@
 				FC725FC7162ED823001C1F42 /* DTUnwindableModalCrossFadeSegue.m in Sources */,
 				FC725FCD162ED92F001C1F42 /* DTFetchedResultsTableViewController.m in Sources */,
 				FC725FD1162ED9B0001C1F42 /* DTFetchedResultsBasedViewController.m in Sources */,
+				FC0C17DE162F55680054720F /* DTDateFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
