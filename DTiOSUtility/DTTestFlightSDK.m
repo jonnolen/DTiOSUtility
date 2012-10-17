@@ -53,7 +53,9 @@ static DTTestFlightSDK *_shared;
     }
     else{
 #ifdef DEBUG
+        #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
         deviceId = [[UIDevice currentDevice] uniqueIdentifier];
+        #pragma GCC diagnostic warning "-Wdeprecated-declarations"
 #endif
     }
     
