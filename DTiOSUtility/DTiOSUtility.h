@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DTiOSUtility : NSObject
+#import "DTFetchedResultsBasedViewController.h"
+#import "DTFetchedResultsTableViewController.h"
+#import "DTUnwindableModalCrossFadeSegue.h"
+#import "DTUnwindableSegue.h"
+#import "UIView+DTUtility.h"
+#import "DTTestFlightSDK.h"
+#import "DTPaths.h"
 
-@end

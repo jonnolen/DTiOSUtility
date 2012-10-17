@@ -1,0 +1,14 @@
+
+PODS:
+- OCMock (2.0.1)
+- TestFlightSDK (1.1)
+
+DEPENDENCIES:
+- OCMock (= 2.0.1)
+- TestFlightSDK (= 1.1)
+
+SPEC CHECKSUMS:
+  TestFlightSDK: a62347405c04307e2953eda4b8cc465ee51a6c90
+  OCMock: 77a9c4c57af6bf258a537d34cf09abf422affede
+
+COCOAPODS: 0.15.1

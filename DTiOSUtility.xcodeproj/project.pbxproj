@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8EE1BCADD46A4679B1E63E55 /* libPods-DTiOSUtilityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B984E84BB9464CBA96C0F2 /* libPods-DTiOSUtilityTests.a */; };
+		F82E899CEEAF4B80A810EF4E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3051203E14CC4F7AA5911083 /* libPods.a */; };
 		FC5C4F1A162DDE8F00CD307D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5C4F19162DDE8F00CD307D /* Foundation.framework */; };
 		FC5C4F1F162DDE8F00CD307D /* DTiOSUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC5C4F1E162DDE8F00CD307D /* DTiOSUtility.h */; };
-		FC5C4F21162DDE8F00CD307D /* DTiOSUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5C4F20162DDE8F00CD307D /* DTiOSUtility.m */; };
 		FC5C4F29162DDE8F00CD307D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5C4F28162DDE8F00CD307D /* SenTestingKit.framework */; };
-		FC5C4F2B162DDE8F00CD307D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5C4F2A162DDE8F00CD307D /* UIKit.framework */; };
 		FC5C4F2C162DDE8F00CD307D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5C4F19162DDE8F00CD307D /* Foundation.framework */; };
 		FC5C4F2F162DDE8F00CD307D /* libDTiOSUtility.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5C4F16162DDE8F00CD307D /* libDTiOSUtility.a */; };
 		FC5C4F35162DDE8F00CD307D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC5C4F33162DDE8F00CD307D /* InfoPlist.strings */; };
 		FC5C4F38162DDE8F00CD307D /* DTiOSUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5C4F37162DDE8F00CD307D /* DTiOSUtilityTests.m */; };
+		FC725FAC162ECDAE001C1F42 /* DTPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = FC725FAB162ECDAE001C1F42 /* DTPaths.m */; };
+		FC725FAF162ECDF0001C1F42 /* UIView+DTUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FC725FAE162ECDF0001C1F42 /* UIView+DTUtility.m */; };
+		FC725FB2162ECE92001C1F42 /* DTTestFlightSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = FC725FB1162ECE92001C1F42 /* DTTestFlightSDK.m */; };
+		FC725FBF162ED70A001C1F42 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC725FBE162ED70A001C1F42 /* QuartzCore.framework */; };
+		FC725FC2162ED715001C1F42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC725FC1162ED715001C1F42 /* UIKit.framework */; };
+		FC725FC7162ED823001C1F42 /* DTUnwindableModalCrossFadeSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = FC725FC4162ED823001C1F42 /* DTUnwindableModalCrossFadeSegue.m */; };
+		FC725FCD162ED92F001C1F42 /* DTFetchedResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC725FCB162ED92F001C1F42 /* DTFetchedResultsTableViewController.m */; };
+		FC725FCF162ED985001C1F42 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC725FCE162ED985001C1F42 /* CoreData.framework */; };
+		FC725FD1162ED9B0001C1F42 /* DTFetchedResultsBasedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC725FD0162ED9B0001C1F42 /* DTFetchedResultsBasedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,18 +51,39 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3051203E14CC4F7AA5911083 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C08F40B00BC4166BDAAB870 /* Pods-DTiOSUtilityTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DTiOSUtilityTests.xcconfig"; path = "Pods/Pods-DTiOSUtilityTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		B3D5D5802503449CB39E8AB3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		E4B984E84BB9464CBA96C0F2 /* libPods-DTiOSUtilityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DTiOSUtilityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC5C4F16162DDE8F00CD307D /* libDTiOSUtility.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDTiOSUtility.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC5C4F19162DDE8F00CD307D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FC5C4F19162DDE8F00CD307D /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FC5C4F1D162DDE8F00CD307D /* DTiOSUtility-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DTiOSUtility-Prefix.pch"; sourceTree = "<group>"; };
 		FC5C4F1E162DDE8F00CD307D /* DTiOSUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTiOSUtility.h; sourceTree = "<group>"; };
-		FC5C4F20162DDE8F00CD307D /* DTiOSUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTiOSUtility.m; sourceTree = "<group>"; };
 		FC5C4F27162DDE8F00CD307D /* DTiOSUtilityTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DTiOSUtilityTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC5C4F28162DDE8F00CD307D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		FC5C4F2A162DDE8F00CD307D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		FC5C4F28162DDE8F00CD307D /* SenTestingKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		FC5C4F32162DDE8F00CD307D /* DTiOSUtilityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DTiOSUtilityTests-Info.plist"; sourceTree = "<group>"; };
 		FC5C4F34162DDE8F00CD307D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FC5C4F36162DDE8F00CD307D /* DTiOSUtilityTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTiOSUtilityTests.h; sourceTree = "<group>"; };
 		FC5C4F37162DDE8F00CD307D /* DTiOSUtilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTiOSUtilityTests.m; sourceTree = "<group>"; };
+		FC725FA7162ECD73001C1F42 /* DTPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTPaths.h; sourceTree = "<group>"; };
+		FC725FAB162ECDAE001C1F42 /* DTPaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTPaths.m; sourceTree = "<group>"; };
+		FC725FAD162ECDF0001C1F42 /* UIView+DTUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DTUtility.h"; sourceTree = "<group>"; };
+		FC725FAE162ECDF0001C1F42 /* UIView+DTUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DTUtility.m"; sourceTree = "<group>"; };
+		FC725FB0162ECE92001C1F42 /* DTTestFlightSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTestFlightSDK.h; sourceTree = "<group>"; };
+		FC725FB1162ECE92001C1F42 /* DTTestFlightSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTestFlightSDK.m; sourceTree = "<group>"; };
+		FC725FB3162ECEAC001C1F42 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		FC725FBE162ED70A001C1F42 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FC725FC1162ED715001C1F42 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FC725FC3162ED823001C1F42 /* DTUnwindableModalCrossFadeSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTUnwindableModalCrossFadeSegue.h; sourceTree = "<group>"; };
+		FC725FC4162ED823001C1F42 /* DTUnwindableModalCrossFadeSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTUnwindableModalCrossFadeSegue.m; sourceTree = "<group>"; };
+		FC725FC5162ED823001C1F42 /* DTUnwindableSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTUnwindableSegue.h; sourceTree = "<group>"; };
+		FC725FC6162ED823001C1F42 /* DTUnwindableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTUnwindableViewController.h; sourceTree = "<group>"; };
+		FC725FC8162ED92E001C1F42 /* DTFetchedResultsBasedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFetchedResultsBasedViewController.h; sourceTree = "<group>"; };
+		FC725FCA162ED92F001C1F42 /* DTFetchedResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFetchedResultsTableViewController.h; sourceTree = "<group>"; };
+		FC725FCB162ED92F001C1F42 /* DTFetchedResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTFetchedResultsTableViewController.m; sourceTree = "<group>"; };
+		FC725FCE162ED985001C1F42 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FC725FD0162ED9B0001C1F42 /* DTFetchedResultsBasedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTFetchedResultsBasedViewController.m; sourceTree = "<group>"; };
+		FC725FD5162EDA72001C1F42 /* DTiOSUtility.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = DTiOSUtility.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +91,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC725FCF162ED985001C1F42 /* CoreData.framework in Frameworks */,
+				FC725FC2162ED715001C1F42 /* UIKit.framework in Frameworks */,
+				FC725FBF162ED70A001C1F42 /* QuartzCore.framework in Frameworks */,
 				FC5C4F1A162DDE8F00CD307D /* Foundation.framework in Frameworks */,
+				F82E899CEEAF4B80A810EF4E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,9 +104,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC5C4F29162DDE8F00CD307D /* SenTestingKit.framework in Frameworks */,
-				FC5C4F2B162DDE8F00CD307D /* UIKit.framework in Frameworks */,
 				FC5C4F2C162DDE8F00CD307D /* Foundation.framework in Frameworks */,
 				FC5C4F2F162DDE8F00CD307D /* libDTiOSUtility.a in Frameworks */,
+				8EE1BCADD46A4679B1E63E55 /* libPods-DTiOSUtilityTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +120,10 @@
 				FC5C4F30162DDE8F00CD307D /* DTiOSUtilityTests */,
 				FC5C4F18162DDE8F00CD307D /* Frameworks */,
 				FC5C4F17162DDE8F00CD307D /* Products */,
+				3C08F40B00BC4166BDAAB870 /* Pods-DTiOSUtilityTests.xcconfig */,
+				B3D5D5802503449CB39E8AB3 /* Pods.xcconfig */,
+				FC725FD5162EDA72001C1F42 /* DTiOSUtility.podspec */,
+				FC725FB3162ECEAC001C1F42 /* Podfile */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,9 +139,13 @@
 		FC5C4F18162DDE8F00CD307D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC725FCE162ED985001C1F42 /* CoreData.framework */,
+				FC725FC1162ED715001C1F42 /* UIKit.framework */,
+				FC725FBE162ED70A001C1F42 /* QuartzCore.framework */,
 				FC5C4F19162DDE8F00CD307D /* Foundation.framework */,
 				FC5C4F28162DDE8F00CD307D /* SenTestingKit.framework */,
-				FC5C4F2A162DDE8F00CD307D /* UIKit.framework */,
+				E4B984E84BB9464CBA96C0F2 /* libPods-DTiOSUtilityTests.a */,
+				3051203E14CC4F7AA5911083 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,8 +153,12 @@
 		FC5C4F1B162DDE8F00CD307D /* DTiOSUtility */ = {
 			isa = PBXGroup;
 			children = (
+				FC725FD3162EDA12001C1F42 /* UIKit */,
+				FC725FB0162ECE92001C1F42 /* DTTestFlightSDK.h */,
+				FC725FB1162ECE92001C1F42 /* DTTestFlightSDK.m */,
+				FC725FA7162ECD73001C1F42 /* DTPaths.h */,
+				FC725FAB162ECDAE001C1F42 /* DTPaths.m */,
 				FC5C4F1E162DDE8F00CD307D /* DTiOSUtility.h */,
-				FC5C4F20162DDE8F00CD307D /* DTiOSUtility.m */,
 				FC5C4F1C162DDE8F00CD307D /* Supporting Files */,
 			);
 			path = DTiOSUtility;
@@ -145,6 +191,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FC725FD3162EDA12001C1F42 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				FC725FC8162ED92E001C1F42 /* DTFetchedResultsBasedViewController.h */,
+				FC725FD0162ED9B0001C1F42 /* DTFetchedResultsBasedViewController.m */,
+				FC725FCA162ED92F001C1F42 /* DTFetchedResultsTableViewController.h */,
+				FC725FCB162ED92F001C1F42 /* DTFetchedResultsTableViewController.m */,
+				FC725FC3162ED823001C1F42 /* DTUnwindableModalCrossFadeSegue.h */,
+				FC725FC4162ED823001C1F42 /* DTUnwindableModalCrossFadeSegue.m */,
+				FC725FC5162ED823001C1F42 /* DTUnwindableSegue.h */,
+				FC725FC6162ED823001C1F42 /* DTUnwindableViewController.h */,
+				FC725FAD162ECDF0001C1F42 /* UIView+DTUtility.h */,
+				FC725FAE162ECDF0001C1F42 /* UIView+DTUtility.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,6 +218,7 @@
 				FC5C4F12162DDE8F00CD307D /* Sources */,
 				FC5C4F13162DDE8F00CD307D /* Frameworks */,
 				FC5C4F14162DDE8F00CD307D /* CopyFiles */,
+				0680EA7DF307460E9DEAE85D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,6 +237,7 @@
 				FC5C4F23162DDE8F00CD307D /* Frameworks */,
 				FC5C4F24162DDE8F00CD307D /* Resources */,
 				FC5C4F25162DDE8F00CD307D /* ShellScript */,
+				2A374DED342448F38842AB16 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,6 +288,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0680EA7DF307460E9DEAE85D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		2A374DED342448F38842AB16 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-DTiOSUtilityTests-resources.sh\"\n";
+		};
 		FC5C4F25162DDE8F00CD307D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -243,7 +336,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC5C4F21162DDE8F00CD307D /* DTiOSUtility.m in Sources */,
+				FC725FAC162ECDAE001C1F42 /* DTPaths.m in Sources */,
+				FC725FAF162ECDF0001C1F42 /* UIView+DTUtility.m in Sources */,
+				FC725FB2162ECE92001C1F42 /* DTTestFlightSDK.m in Sources */,
+				FC725FC7162ED823001C1F42 /* DTUnwindableModalCrossFadeSegue.m in Sources */,
+				FC725FCD162ED92F001C1F42 /* DTFetchedResultsTableViewController.m in Sources */,
+				FC725FD1162ED9B0001C1F42 /* DTFetchedResultsBasedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +396,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -318,7 +416,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -326,11 +424,12 @@
 		};
 		FC5C4F3C162DDE8F00CD307D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3D5D5802503449CB39E8AB3 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/DTiOSUtility.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DTiOSUtility/DTiOSUtility-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -338,11 +437,12 @@
 		};
 		FC5C4F3D162DDE8F00CD307D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3D5D5802503449CB39E8AB3 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/DTiOSUtility.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DTiOSUtility/DTiOSUtility-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -350,6 +450,7 @@
 		};
 		FC5C4F3F162DDE8F00CD307D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C08F40B00BC4166BDAAB870 /* Pods-DTiOSUtilityTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -365,6 +466,7 @@
 		};
 		FC5C4F40162DDE8F00CD307D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C08F40B00BC4166BDAAB870 /* Pods-DTiOSUtilityTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -397,6 +499,7 @@
 				FC5C4F3D162DDE8F00CD307D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC5C4F3E162DDE8F00CD307D /* Build configuration list for PBXNativeTarget "DTiOSUtilityTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +508,7 @@
 				FC5C4F40162DDE8F00CD307D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
