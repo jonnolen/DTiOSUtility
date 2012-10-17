@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.version      = "0.0.1"
   s.summary      = "Utility classes common across Developer Town internal projects."
   # s.description  = <<-DESC
-  s.license      = { :file => 'MIT-license.txt' }
+  s.license      = {:type=>'MIT'}
   s.homepage     = "http://EXAMPLE/DTiOSUtility"
 
   s.license      = 'MIT'
