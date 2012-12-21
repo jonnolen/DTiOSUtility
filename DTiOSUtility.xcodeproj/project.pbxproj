@@ -56,6 +56,7 @@
 		3C08F40B00BC4166BDAAB870 /* Pods-DTiOSUtilityTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DTiOSUtilityTests.xcconfig"; path = "Pods/Pods-DTiOSUtilityTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		B3D5D5802503449CB39E8AB3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		E4B984E84BB9464CBA96C0F2 /* libPods-DTiOSUtilityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DTiOSUtilityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC03B8901684D146000F2EC5 /* DTKeyValueCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTKeyValueCoding.h; sourceTree = "<group>"; };
 		FC0C17DC162F55680054720F /* DTDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDateFormatter.h; sourceTree = "<group>"; };
 		FC0C17DD162F55680054720F /* DTDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTDateFormatter.m; sourceTree = "<group>"; };
 		FC5C4F16162DDE8F00CD307D /* libDTiOSUtility.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDTiOSUtility.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +157,7 @@
 		FC5C4F1B162DDE8F00CD307D /* DTiOSUtility */ = {
 			isa = PBXGroup;
 			children = (
+				FC03B8901684D146000F2EC5 /* DTKeyValueCoding.h */,
 				FC725FD3162EDA12001C1F42 /* UIKit */,
 				FC725FB0162ECE92001C1F42 /* DTTestFlightSDK.h */,
 				FC725FB1162ECE92001C1F42 /* DTTestFlightSDK.m */,
