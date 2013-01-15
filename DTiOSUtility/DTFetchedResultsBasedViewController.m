@@ -20,9 +20,18 @@
     [self setupFetchedResultsController];
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self setupFetchedResultsController];
+}
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    self.fetchResultsController.delegate = nil;
+    self.fetchedResultsController = nil;
+}
+
 -(void)viewDidUnload{
     [super viewDidUnload];
-    self.fetchedResultsController = nil;
 }
 
 -(void)setupFetchedResultsController{
