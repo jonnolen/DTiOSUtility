@@ -26,7 +26,7 @@
 }
 -(void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
-    self.fetchResultsController.delegate = nil;
+    self.fetchedResultsController.delegate = nil;
     self.fetchedResultsController = nil;
 }
 
