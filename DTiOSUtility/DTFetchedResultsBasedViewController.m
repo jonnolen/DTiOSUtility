@@ -16,8 +16,7 @@
 @implementation DTFetchedResultsBasedViewController
 
 -(void)viewDidLoad{
-    [super viewDidLoad];
-    [self setupFetchedResultsController];
+    [super viewDidLoad];    
 }
 
 -(void)viewWillAppear:(BOOL)animated{
