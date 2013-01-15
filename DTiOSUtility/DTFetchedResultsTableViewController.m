@@ -21,6 +21,11 @@
     self.tableView = nil;
 }
 
+-(void)reload{
+    [super reload];
+    [self.tableView reloadData];
+}
+
 -(void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath{
     
 }

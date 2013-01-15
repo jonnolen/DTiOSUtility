@@ -116,4 +116,7 @@
     return [self.fetchedResultsController objectAtIndexPath:indexPath];
 }
 
+-(void)reload{
+    [self setupFetchedResultsController];
+}
 @end

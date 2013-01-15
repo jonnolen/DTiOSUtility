@@ -18,6 +18,7 @@
 //Override these to provide custom behavior.
 -(void)cleanFetchedResultsControllerCache;
 -(void)fetchResults;
+-(void)reload;
 
 //Implement these in child classes to handle the indicated events.
 -(void)dataWillChange;
