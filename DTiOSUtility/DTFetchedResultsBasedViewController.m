@@ -69,6 +69,21 @@
     [self dataWillChange];
 }
 
+-(void)controller:(NSFetchedResultsController *)controller
+ didChangeSection:(id<NSFetchedResultsSectionInfo>)sectionInfo
+          atIndex:(NSUInteger)sectionIndex
+    forChangeType:(NSFetchedResultsChangeType)type{
+    
+    switch(type){
+        case NSFetchedResultsChangeInsert:
+            [self sectionInserted:sectionIndex];
+            break;
+        case NSFetchedResultsChangeDelete:
+            [self sectionDeleted:sectionIndex];
+            break;
+    }
+    
+}
 -(void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath{
     
     switch(type) {
@@ -103,7 +118,10 @@
 }
 -(void)dataDidChange{
 }
-
+-(void)sectionInserted:(NSUInteger)sectionIndex{
+}
+-(void)sectionDeleted:(NSUInteger)sectionIndex{    
+}
 -(NSUInteger)numberOfSections{
     return [self.fetchedResultsController.sections count];
 }

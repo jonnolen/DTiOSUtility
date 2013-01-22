@@ -51,6 +51,12 @@
     [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath]
                           withRowAnimation:UITableViewRowAnimationFade];
 }
+-(void)sectionInserted:(NSUInteger)sectionIndex{
+    [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
+}
+-(void)sectionDeleted:(NSUInteger)sectionIndex{
+    [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
+}
 -(void)dataDidChange{
     [self.tableView endUpdates];
 }
