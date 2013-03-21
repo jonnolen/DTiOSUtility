@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (DTUtility)
-- (UIImage *)viewSnapshot;
+- (UIImage *)viewSnapshotForCGGraphicsContext;
+- (UIImage *)viewSnapshotForUIGraphicsContext;
 @end

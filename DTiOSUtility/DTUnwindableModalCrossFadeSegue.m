@@ -18,13 +18,13 @@
 
     UIImageView *sourceImageView;
     sourceImageView = [[UIImageView alloc]
-                       initWithImage:[sourceView viewSnapshot]];
+                       initWithImage:[sourceView viewSnapshotForUIGraphicsContext]];
     
     CGRect originalFrame = destinationView.bounds;
     
     UIImageView *destinationImageView;
     destinationImageView = [[UIImageView alloc]
-                            initWithImage:[destinationView viewSnapshot]];
+                            initWithImage:[destinationView viewSnapshotForUIGraphicsContext]];
     
     destinationImageView.frame = originalFrame;
     destinationImageView.alpha = 0.0;
@@ -60,13 +60,13 @@
     
     UIImageView *sourceImageView;
     sourceImageView = [[UIImageView alloc]
-                       initWithImage:[sourceView viewSnapshot]];
+                       initWithImage:[sourceView viewSnapshotForUIGraphicsContext]];
     
     CGRect originalFrame = destinationView.bounds;
     
     UIImageView *destinationImageView;
     destinationImageView = [[UIImageView alloc]
-                            initWithImage:[destinationView viewSnapshot]];
+                            initWithImage:[destinationView viewSnapshotForUIGraphicsContext]];
     
     destinationImageView.frame = originalFrame;
     destinationImageView.alpha = 0.0;
