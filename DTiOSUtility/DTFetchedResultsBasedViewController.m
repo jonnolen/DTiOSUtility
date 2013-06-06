@@ -78,9 +78,7 @@
         NSLog(@"error: %@",error);
     }
     
-    if (self.fetchedResultsController.sections.count){
-        self.hasData = YES;
-    }
+    self.hasData = (self.fetchedResultsController.sections.count > 0);
 }
 
 -(void)controllerWillChangeContent:(NSFetchedResultsController *)controller{
@@ -121,6 +119,7 @@
 
 -(void)controllerDidChangeContent:(NSFetchedResultsController *)controller{
     [self dataDidChange];
+    self.hasData = (BOOL)(self.fetchedResultsController.sections.count > 0);
 }
 -(void)dataWillChange{
 }
@@ -133,7 +132,6 @@
 -(void)dataMovedFromIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath{
 }
 -(void)dataDidChange{
-    self.hasData = (BOOL)(self.fetchedResultsController.sections.count > 0);
 }
 -(void)sectionInserted:(NSUInteger)sectionIndex{
 }
