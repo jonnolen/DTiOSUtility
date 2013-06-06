@@ -15,6 +15,20 @@
 
 @implementation DTFetchedResultsBasedViewController
 
+-(id)initWithCoder:(NSCoder *)aDecoder{
+    if (self = [super initWithCoder:aDecoder]){
+        _hasData = NO;
+    }
+    return self;
+}
+
+-(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]){
+        _hasData = NO;
+    }
+    return self;
+}
+
 -(void)viewDidLoad{
     [super viewDidLoad];    
 }
@@ -63,6 +77,10 @@
     if (error){
         NSLog(@"error: %@",error);
     }
+    
+    if (self.fetchedResultsController.sections.count){
+        self.hasData = YES;
+    }
 }
 
 -(void)controllerWillChangeContent:(NSFetchedResultsController *)controller{
@@ -85,9 +103,7 @@
     
 }
 -(void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath{
-    
     switch(type) {
-            
         case NSFetchedResultsChangeInsert:
             [self dataInsertedAtIndexPath:newIndexPath];
             break;
@@ -117,6 +133,7 @@
 -(void)dataMovedFromIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath{
 }
 -(void)dataDidChange{
+    self.hasData = (BOOL)(self.fetchedResultsController.sections.count > 0);
 }
 -(void)sectionInserted:(NSUInteger)sectionIndex{
 }
@@ -136,5 +153,15 @@
 
 -(void)reload{
     [self setupFetchedResultsController];
+}
+
+-(void)setHasData:(BOOL)hasData{
+    if (_hasData != hasData) {
+        _hasData = hasData;
+        [self hasDataChanged];
+    }
+}
+-(void)hasDataChanged{
+    
 }
 @end

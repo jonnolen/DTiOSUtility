@@ -11,6 +11,7 @@
 @interface DTFetchedResultsBasedViewController : UIViewController <NSFetchedResultsControllerDelegate>
 
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, assign) BOOL hasData;
 
 //Must implement this.
 -(NSFetchedResultsController *)createFetchedResultsController;
@@ -28,9 +29,13 @@
 -(void)dataMovedFromIndexPath:(NSIndexPath *)indexPath toIndexPath:(NSIndexPath *)newIndexPath;
 -(void)dataDidChange;
 
+-(void)sectionInserted:(NSUInteger)sectionIndex;
+-(void)sectionDeleted:(NSUInteger)sectionIndex;
+
 //Provide indirect access to underlying fetch request controller.
 -(NSUInteger)numberOfSections;
 -(NSUInteger)numberOfItemsInSection:(NSInteger)section;
 -(id)objectAtIndexPath:(NSIndexPath *)indexPath;
 
+-(void)hasDataChanged;
 @end
