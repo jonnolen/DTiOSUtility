@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8EE1BCADD46A4679B1E63E55 /* libPods-DTiOSUtilityTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B984E84BB9464CBA96C0F2 /* libPods-DTiOSUtilityTests.a */; };
 		F82E899CEEAF4B80A810EF4E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3051203E14CC4F7AA5911083 /* libPods.a */; };
+		FC04E6F017A170C900D08D03 /* DTFlatPopoverBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC04E6EF17A170C900D08D03 /* DTFlatPopoverBackgroundView.m */; };
 		FC0C17DE162F55680054720F /* DTDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0C17DD162F55680054720F /* DTDateFormatter.m */; };
 		FC5C4F1A162DDE8F00CD307D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC5C4F19162DDE8F00CD307D /* Foundation.framework */; };
 		FC5C4F1F162DDE8F00CD307D /* DTiOSUtility.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC5C4F1E162DDE8F00CD307D /* DTiOSUtility.h */; };
@@ -57,6 +58,8 @@
 		B3D5D5802503449CB39E8AB3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		E4B984E84BB9464CBA96C0F2 /* libPods-DTiOSUtilityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DTiOSUtilityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC03B8901684D146000F2EC5 /* DTKeyValueCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTKeyValueCoding.h; sourceTree = "<group>"; };
+		FC04E6EE17A170C900D08D03 /* DTFlatPopoverBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFlatPopoverBackgroundView.h; sourceTree = "<group>"; };
+		FC04E6EF17A170C900D08D03 /* DTFlatPopoverBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTFlatPopoverBackgroundView.m; sourceTree = "<group>"; };
 		FC0C17DC162F55680054720F /* DTDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTDateFormatter.h; sourceTree = "<group>"; };
 		FC0C17DD162F55680054720F /* DTDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTDateFormatter.m; sourceTree = "<group>"; };
 		FC5C4F16162DDE8F00CD307D /* libDTiOSUtility.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDTiOSUtility.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +204,8 @@
 		FC725FD3162EDA12001C1F42 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				FC04E6EE17A170C900D08D03 /* DTFlatPopoverBackgroundView.h */,
+				FC04E6EF17A170C900D08D03 /* DTFlatPopoverBackgroundView.m */,
 				FC725FC8162ED92E001C1F42 /* DTFetchedResultsBasedViewController.h */,
 				FC725FD0162ED9B0001C1F42 /* DTFetchedResultsBasedViewController.m */,
 				FC725FCA162ED92F001C1F42 /* DTFetchedResultsTableViewController.h */,
@@ -350,6 +355,7 @@
 				FC725FCD162ED92F001C1F42 /* DTFetchedResultsTableViewController.m in Sources */,
 				FC725FD1162ED9B0001C1F42 /* DTFetchedResultsBasedViewController.m in Sources */,
 				FC0C17DE162F55680054720F /* DTDateFormatter.m in Sources */,
+				FC04E6F017A170C900D08D03 /* DTFlatPopoverBackgroundView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
