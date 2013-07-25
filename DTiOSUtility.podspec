@@ -8,7 +8,7 @@
 #
 Pod::Spec.new do |s|
   s.name         = "DTiOSUtility"
-  s.version      = "0.0.8"
+  s.version      = "0.0.9"
   s.summary      = "Utility classes common across Developer Town internal projects."
   s.description  = "a description."
   s.homepage     = "http://github.com/jonnolen/DTiOSUtility"
