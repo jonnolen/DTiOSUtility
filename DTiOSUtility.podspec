@@ -25,6 +25,6 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.dependency "TestFlightSDK", "1.1"
+  s.dependency "TestFlightSDK", "~>1.2.6"
   
 end
