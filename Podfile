@@ -1,6 +1,6 @@
 platform :ios, "5.0"
 
-pod "TestFlightSDK", "1.1"
+pod "TestFlightSDK", "~>1.2.6"
 
 
 target :DTiOSUtilityTests, :exclusive => true do
