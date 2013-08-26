@@ -25,6 +25,6 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.dependency "TestFlightSDK", "~>1.2.6"
+  s.dependency "TestFlightSDK", "~>2.0"
   s.dependency "SSToolkit"
 end
