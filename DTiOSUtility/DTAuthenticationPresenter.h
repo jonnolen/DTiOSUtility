@@ -20,6 +20,7 @@
 
 @property (nonatomic, strong) UIWindow *applicationWindow;
 @property (nonatomic, copy) UIViewController<DTAuthenticationPresenterViewController> *(^authenticationViewControllerFactoryBlock)(void);
+@property (nonatomic, assign) UIWindowLevel authenticationWindowLevel;
 
 -(void)presentAuthentication;
 

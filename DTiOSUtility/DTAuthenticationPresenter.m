@@ -30,13 +30,20 @@ static DTAuthenticationPresenter *_sharedPresenter;
     return _sharedPresenter;
 }
 
+-(id)init{
+    if (self = [super init]){
+        _authenticationWindowLevel = UIWindowLevelNormal;
+    }
+    return self;
+}
+
 -(void)presentAuthentication{
     if (!presentedWindow && self.authenticationViewControllerFactoryBlock){
         presentedWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
         authenticationViewController = self.authenticationViewControllerFactoryBlock();
         [authenticationViewController addObserver:self forKeyPath:@"isFinished" options:0 context:nil];
         presentedWindow.rootViewController = authenticationViewController;
-        presentedWindow.windowLevel = UIWindowLevelAlert;
+        presentedWindow.windowLevel = self.authenticationWindowLevel;
         presentedWindow.alpha = 0.0;
         presentedWindow.hidden = NO;
         [presentedWindow makeKeyWindow];
