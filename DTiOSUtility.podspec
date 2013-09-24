@@ -1,11 +1,3 @@
-#
-# Be sure to run `pod spec lint DTiOSUtility.podspec' to ensure this is a
-# valid spec.
-#
-# Remove all comments before submitting the spec. Optional attributes are commented.
-#
-# For details see: https://github.com/CocoaPods/CocoaPods/wiki/The-podspec-format
-#
 Pod::Spec.new do |s|
   s.name         = "DTiOSUtility"
   s.version      = "0.0.12"
@@ -16,7 +8,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   
   s.author       = { "Jon Nolen" => "jon.nolen@gmail.com" }
-  s.source       = { :git => "https://github.com/jonnolen/DTiOSUtility.git", :commit=>"bb10ddd"}
+  s.source       = { :git => "https://github.com/jonnolen/DTiOSUtility.git", :commit=>"687bdca6f072d9c9e1bb0c9d336da68945ad08ef"}
   s.platform     = :ios, "5.0"
   s.source_files = 'Classes', 'DTiOSUtility/*.{h,m}'
 
