@@ -51,13 +51,6 @@ static DTTestFlightSDK *_shared;
     if ([[UIDevice currentDevice] respondsToSelector:@selector(identifierForVendor)]){
         deviceId = [[[UIDevice currentDevice] performSelector:@selector(identifierForVendor)] performSelector:@selector(UUIDString)];
     }
-    else{
-#ifdef DEBUG
-        #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
-        deviceId = [[UIDevice currentDevice] uniqueIdentifier];
-        #pragma GCC diagnostic warning "-Wdeprecated-declarations"
-#endif
-    }
     
     return deviceId;
 }

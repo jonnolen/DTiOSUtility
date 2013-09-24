@@ -8,7 +8,7 @@
 #
 Pod::Spec.new do |s|
   s.name         = "DTiOSUtility"
-  s.version      = "0.0.11"
+  s.version      = "0.0.12"
   s.summary      = "Utility classes common across Developer Town internal projects."
   s.description  = "a description."
   s.homepage     = "http://github.com/jonnolen/DTiOSUtility"
@@ -26,5 +26,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.dependency "TestFlightSDK", "~>2.0"
-  s.dependency "SSToolkit"
+  s.dependency "SSToolkit", "~>1.0.4"
+  s.dependency "libextobjc", "~> 0.3"
 end
