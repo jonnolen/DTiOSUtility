@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+extern NSString *const DTAuthenticationPresenterFinishedAuthentication;
+
 @protocol DTAuthenticationPresenterViewController <NSObject>
 @property (nonatomic, readonly) BOOL isFinished;
 @end

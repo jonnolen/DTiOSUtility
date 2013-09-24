@@ -8,6 +8,8 @@
 
 #import "DTAuthenticationPresenter.h"
 #import <libextobjc/EXTScope.h>
+
+NSString *const DTAuthenticationPresenterFinishedAuthentication = @"DTAuthenticationPresenterFinishedAuthentication";
 @interface DTAuthenticationPresenter(){
     UIWindow *presentedWindow;
     UIViewController<DTAuthenticationPresenterViewController> *authenticationViewController;
@@ -66,6 +68,7 @@ static DTAuthenticationPresenter *_sharedPresenter;
 }
 
 -(void)clearAuthentication{
+    [[NSNotificationCenter defaultCenter] postNotificationName:DTAuthenticationPresenterFinishedAuthentication object:self];
     UIWindow *__strong strong_presentedWindow = presentedWindow;
     presentedWindow = nil;
     [authenticationViewController removeObserver:self forKeyPath:@"isFinished"];
