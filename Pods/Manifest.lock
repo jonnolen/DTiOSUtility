@@ -89,7 +89,7 @@ PODS:
   - TestFlightSDK (2.0)
 
 DEPENDENCIES:
-  - libextobjc
+  - libextobjc (~> 0.3)
   - OCMock (= 2.0.1)
   - SSToolkit (~> 1.0.4)
   - TestFlightSDK (~> 2.0)

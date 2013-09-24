@@ -7,7 +7,7 @@
 //
 
 #import "DTAuthenticationPresenter.h"
-
+#import <libextobjc/EXTScope.h>
 @interface DTAuthenticationPresenter(){
     UIWindow *presentedWindow;
     UIViewController<DTAuthenticationPresenterViewController> *authenticationViewController;
