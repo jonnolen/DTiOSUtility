@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
 # Rewrite references to libextobjc to use the pod's files.
-  s.prepare_command = <<-'END'
-     find . \( -name '*.h' -o -name '*.m' \) \
-        -exec sed -i '' -E 's@<DTiOSUtility/(EXTScope|metamacros)\.h>@<\1.h>@' {} +
-  END
+#  s.prepare_command = <<-'END'
+#     find . \( -name '*.h' -o -name '*.m' \) \
+#        -exec sed -i '' -E 's@<DTiOSUtility/(EXTScope|metamacros)\.h>@<\1.h>@' {} +
+#  END
 
   s.dependency "TestFlightSDK", "~>2.0"
   s.dependency "SSToolkit", "~>1.0.4"
