@@ -1,10 +1,5 @@
-//
 //  DTTestFlightWrapper.m
-//  PassagewaysBoard
-//
 //  Created by Jonathan Nolen on 10/8/12.
-//  Copyright (c) 2012 Passageways. All rights reserved.
-//
 
 #import "DTTestFlightSDK.h"
 #import <UIKit/UIKit.h>

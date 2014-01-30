@@ -1,5 +1,5 @@
 //
-//  PBFetchedResultsTableViewController.h
+//  DTFetchedResultsTableViewController.h
 //  
 //
 //  Created by Jonathan Nolen on 10/4/12.

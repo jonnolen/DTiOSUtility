@@ -1,10 +1,5 @@
-//
 //  DTAuthenticationPresenter.m
-//  DTiOSUtility
-//
 //  Created by Jonathan Nolen on 9/24/13.
-//  Copyright (c) 2013 Developertown. All rights reserved.
-//
 
 #import "DTAuthenticationPresenter.h"
 #import <libextobjc/EXTScope.h>

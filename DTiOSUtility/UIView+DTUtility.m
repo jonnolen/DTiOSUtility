@@ -1,10 +1,5 @@
-//
-//  UIView+PBCategory.m
-//  PassagewaysBoard
-//
+//  UIView+DTCategory.m
 //  Created by Jonathan Nolen on 10/4/12.
-//  Copyright (c) 2012 Passageways. All rights reserved.
-//
 
 #import "UIView+DTUtility.h"
 #import <QuartzCore/QuartzCore.h>

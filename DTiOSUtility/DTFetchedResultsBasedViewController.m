@@ -1,5 +1,5 @@
 //
-//  PBFetchedResultsBasedViewController.m
+//  DTFetchedResultsBasedViewController.m
 //  
 //
 //  Created by Jonathan Nolen on 10/4/12.
