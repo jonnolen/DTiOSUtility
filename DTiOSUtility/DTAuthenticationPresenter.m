@@ -4,6 +4,7 @@
 #import "DTAuthenticationPresenter.h"
 #import <libextobjc/EXTScope.h>
 
+NSString *const DTAuthenticationPresenterStartedAuthentication = @"DTAuthenticationPresenterStartedAuthentication";
 NSString *const DTAuthenticationPresenterFinishedAuthentication = @"DTAuthenticationPresenterFinishedAuthentication";
 @interface DTAuthenticationPresenter(){
     UIWindow *presentedWindow;
@@ -46,6 +47,8 @@ static DTAuthenticationPresenter *_sharedPresenter;
         [presentedWindow makeKeyWindow];
         [UIView animateWithDuration:.25 animations:^{
             presentedWindow.alpha = 1.0;
+        } completion:^(BOOL finished) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:DTAuthenticationPresenterStartedAuthentication object:self];
         }];
     }
     else{

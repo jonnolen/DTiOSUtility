@@ -4,6 +4,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+extern NSString *const DTAuthenticationPresenterStartedAuthentication;
 extern NSString *const DTAuthenticationPresenterFinishedAuthentication;
 
 @protocol DTAuthenticationPresenterViewController <NSObject>
