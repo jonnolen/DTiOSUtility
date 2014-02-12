@@ -30,7 +30,7 @@ static DTAuthenticationPresenter *_sharedPresenter;
 
 -(id)init{
     if (self = [super init]){
-        _authenticationWindowLevel = UIWindowLevelNormal;
+        _authenticationWindowLevel = [UIApplication sharedApplication].keyWindow.windowLevel + 0.1;
     }
     return self;
 }
