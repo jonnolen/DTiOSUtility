@@ -25,5 +25,5 @@ Pod::Spec.new do |s|
 
   s.dependency "TestFlightSDK", "~>2.0"
   s.dependency "SSToolkit", "~>1.0.4"
-  s.dependency "libextobjc/EXTScope", "~> 0.3.0"
+  s.dependency "libextobjc/EXTScope", "~> 0.3"
 end
