@@ -35,10 +35,17 @@ static DTAuthenticationPresenter *_sharedPresenter;
     return self;
 }
 
--(void)presentAuthentication{
+-(void)presentAuthenticationWithContext:(id)context{
     if (!presentedWindow && self.authenticationViewControllerFactoryBlock){
         presentedWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-        authenticationViewController = self.authenticationViewControllerFactoryBlock();
+        
+        if (self.authenticationViewControllerFactoryBlockWithContext) {
+            authenticationViewController = self.authenticationViewControllerFactoryBlockWithContext(context);
+        }
+        else {
+            authenticationViewController = self.authenticationViewControllerFactoryBlock();
+        }
+        
         [authenticationViewController addObserver:self forKeyPath:@"isFinished" options:0 context:nil];
         presentedWindow.rootViewController = authenticationViewController;
         presentedWindow.windowLevel = self.authenticationWindowLevel;
@@ -47,8 +54,6 @@ static DTAuthenticationPresenter *_sharedPresenter;
         [presentedWindow makeKeyWindow];
         [UIView animateWithDuration:.25 animations:^{
             presentedWindow.alpha = 1.0;
-        } completion:^(BOOL finished) {
-            [[NSNotificationCenter defaultCenter] postNotificationName:DTAuthenticationPresenterStartedAuthentication object:self];
         }];
     }
     else{
@@ -56,6 +61,11 @@ static DTAuthenticationPresenter *_sharedPresenter;
         [presentedWindow makeKeyAndVisible];
     }
 }
+
+-(void)presentAuthentication{
+    [self presentAuthenticationWithContext:nil];
+}
+
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
     if (object == authenticationViewController && [keyPath isEqualToString:@"isFinished"]){

@@ -18,9 +18,11 @@ extern NSString *const DTAuthenticationPresenterFinishedAuthentication;
 
 @property (nonatomic, strong) UIWindow *applicationWindow;
 @property (nonatomic, copy) UIViewController<DTAuthenticationPresenterViewController> *(^authenticationViewControllerFactoryBlock)(void);
+@property (nonatomic, copy) UIViewController<DTAuthenticationPresenterViewController> *(^authenticationViewControllerFactoryBlockWithContext)(id);
+
 @property (nonatomic, assign) UIWindowLevel authenticationWindowLevel;
 
 -(void)presentAuthentication;
-
+-(void)presentAuthenticationWithContext:(id)context;
 @end
 
