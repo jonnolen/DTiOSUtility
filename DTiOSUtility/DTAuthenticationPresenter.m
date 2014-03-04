@@ -36,7 +36,7 @@ static DTAuthenticationPresenter *_sharedPresenter;
 }
 
 -(void)presentAuthenticationWithContext:(id)context{
-    if (!presentedWindow && self.authenticationViewControllerFactoryBlock){
+    if (!presentedWindow && self.hasFactoryBlock){
         presentedWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
         
         if (self.authenticationViewControllerFactoryBlockWithContext) {
@@ -61,7 +61,9 @@ static DTAuthenticationPresenter *_sharedPresenter;
         [presentedWindow makeKeyAndVisible];
     }
 }
-
+- (BOOL)hasFactoryBlock{
+    return (self.authenticationViewControllerFactoryBlock || self.authenticationViewControllerFactoryBlockWithContext);
+}
 -(void)presentAuthentication{
     [self presentAuthenticationWithContext:nil];
 }
