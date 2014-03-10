@@ -16,7 +16,6 @@
 		FC615B4C17F205C000B93B39 /* DTAuthenticationPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC615B4B17F205C000B93B39 /* DTAuthenticationPresenter.m */; };
 		FC725FAC162ECDAE001C1F42 /* DTPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = FC725FAB162ECDAE001C1F42 /* DTPaths.m */; };
 		FC725FAF162ECDF0001C1F42 /* UIView+DTUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = FC725FAE162ECDF0001C1F42 /* UIView+DTUtility.m */; };
-		FC725FB2162ECE92001C1F42 /* DTTestFlightSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = FC725FB1162ECE92001C1F42 /* DTTestFlightSDK.m */; };
 		FC725FBF162ED70A001C1F42 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC725FBE162ED70A001C1F42 /* QuartzCore.framework */; };
 		FC725FC2162ED715001C1F42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC725FC1162ED715001C1F42 /* UIKit.framework */; };
 		FC725FC7162ED823001C1F42 /* DTUnwindableModalCrossFadeSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = FC725FC4162ED823001C1F42 /* DTUnwindableModalCrossFadeSegue.m */; };
@@ -61,8 +60,6 @@
 		FC725FAB162ECDAE001C1F42 /* DTPaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTPaths.m; sourceTree = "<group>"; };
 		FC725FAD162ECDF0001C1F42 /* UIView+DTUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DTUtility.h"; sourceTree = "<group>"; };
 		FC725FAE162ECDF0001C1F42 /* UIView+DTUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DTUtility.m"; sourceTree = "<group>"; };
-		FC725FB0162ECE92001C1F42 /* DTTestFlightSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTTestFlightSDK.h; sourceTree = "<group>"; };
-		FC725FB1162ECE92001C1F42 /* DTTestFlightSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTestFlightSDK.m; sourceTree = "<group>"; };
 		FC725FB3162ECEAC001C1F42 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FC725FBE162ED70A001C1F42 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		FC725FC1162ED715001C1F42 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -134,8 +131,6 @@
 			children = (
 				FC03B8901684D146000F2EC5 /* DTKeyValueCoding.h */,
 				FC725FD3162EDA12001C1F42 /* UIKit */,
-				FC725FB0162ECE92001C1F42 /* DTTestFlightSDK.h */,
-				FC725FB1162ECE92001C1F42 /* DTTestFlightSDK.m */,
 				FC725FA7162ECD73001C1F42 /* DTPaths.h */,
 				FC725FAB162ECDAE001C1F42 /* DTPaths.m */,
 				FC5C4F1E162DDE8F00CD307D /* DTiOSUtility.h */,
@@ -250,7 +245,6 @@
 				FC725FAC162ECDAE001C1F42 /* DTPaths.m in Sources */,
 				FC04CF56189ADBD600B1487C /* DTHighlightableBackgroundButton.m in Sources */,
 				FC725FAF162ECDF0001C1F42 /* UIView+DTUtility.m in Sources */,
-				FC725FB2162ECE92001C1F42 /* DTTestFlightSDK.m in Sources */,
 				FC725FC7162ED823001C1F42 /* DTUnwindableModalCrossFadeSegue.m in Sources */,
 				FC725FCD162ED92F001C1F42 /* DTFetchedResultsTableViewController.m in Sources */,
 				FC725FD1162ED9B0001C1F42 /* DTFetchedResultsBasedViewController.m in Sources */,

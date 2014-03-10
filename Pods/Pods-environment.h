@@ -12,12 +12,6 @@
 #define COCOAPODS_VERSION_MINOR_SSToolkit 0
 #define COCOAPODS_VERSION_PATCH_SSToolkit 4
 
-// TestFlightSDK
-#define COCOAPODS_POD_AVAILABLE_TestFlightSDK
-#define COCOAPODS_VERSION_MAJOR_TestFlightSDK 2
-#define COCOAPODS_VERSION_MINOR_TestFlightSDK 0
-#define COCOAPODS_VERSION_PATCH_TestFlightSDK 0
-
 // libextobjc
 #define COCOAPODS_POD_AVAILABLE_libextobjc
 #define COCOAPODS_VERSION_MAJOR_libextobjc 0
