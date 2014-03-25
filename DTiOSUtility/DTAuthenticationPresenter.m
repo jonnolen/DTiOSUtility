@@ -9,6 +9,7 @@ NSString *const DTAuthenticationPresenterFinishedAuthentication = @"DTAuthentica
 @interface DTAuthenticationPresenter(){
     UIWindow *presentedWindow;
     UIViewController<DTAuthenticationPresenterViewController> *authenticationViewController;
+    id didBecomeActiveObserver;
 }
 
 @end
@@ -31,8 +32,20 @@ static DTAuthenticationPresenter *_sharedPresenter;
 -(id)init{
     if (self = [super init]){
         _authenticationWindowLevel = [UIApplication sharedApplication].keyWindow.windowLevel + 0.1;
+        didBecomeActiveObserver = [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidBecomeActiveNotification
+                                                                                    object:nil
+                                                                                     queue:[NSOperationQueue mainQueue]
+                                                                                usingBlock:^(NSNotification *n){
+                                                                                    if (presentedWindow){
+                                                                                        [presentedWindow makeKeyAndVisible];
+                                                                                    }
+                                                                                }];
     }
     return self;
+}
+
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:didBecomeActiveObserver];
 }
 
 -(void)presentAuthenticationWithContext:(id)context{
