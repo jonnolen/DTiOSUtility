@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "DTiOSUtility"
-  s.version      = "0.0.19"
+  s.version      = "0.0.20"
   s.summary      = "Utility classes common across Developer Town internal projects."
   s.description  = "a description."
   s.homepage     = "http://github.com/jonnolen/DTiOSUtility"
@@ -23,6 +23,6 @@ Pod::Spec.new do |s|
 #        -exec sed -i '' -E 's@<DTiOSUtility/(EXTScope|metamacros)\.h>@<\1.h>@' {} +
 #  END
 
-  s.dependency "SSToolkit", "~>1.0.4"
-  s.dependency "libextobjc/EXTScope", "~> 0.3"
+  s.dependency "SSToolkit", ">= 1.0.4"
+  s.dependency "libextobjc/EXTScope", ">= 0.3"
 end

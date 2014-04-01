@@ -14,7 +14,6 @@
 #import "DTUnwindableModalCrossFadeSegue.h"
 #import "DTUnwindableSegue.h"
 #import "UIView+DTUtility.h"
-#import "DTTestFlightSDK.h"
 #import "DTPaths.h"
 #import "DTDateFormatter.h"
 #import "DTKeyValueCoding.h"
