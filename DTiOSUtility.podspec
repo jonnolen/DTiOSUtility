@@ -24,5 +24,5 @@ Pod::Spec.new do |s|
 #  END
 
   s.dependency "SSToolkit", ">= 1.0.4"
-  s.dependency "libextobjc/EXTScope", ">= 0.3"
+  s.dependency "libextobjc/EXTScope" 
 end
