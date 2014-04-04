@@ -34,14 +34,11 @@ PODS:
     - libextobjc/RuntimeExtensions
   - libextobjc/RuntimeExtensions (0.4)
   - libextobjc/UmbrellaHeader (0.4)
-  - SSToolkit (1.0.4)
 
 DEPENDENCIES:
   - libextobjc (~> 0.3)
-  - SSToolkit (~> 1.0.4)
 
 SPEC CHECKSUMS:
   libextobjc: 2c9fc8226f0f38e562587f65172f93f0c9b4a47a
-  SSToolkit: 689acaedac79c2079e492e528a55bcb5db9d98c4
 
-COCOAPODS: 0.30.0
+COCOAPODS: 0.31.1

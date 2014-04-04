@@ -4,7 +4,7 @@
 
 #import "DTFlatPopoverBackgroundView.h"
 #import <QuartzCore/QuartzCore.h>
-#import <SSToolkit/SSDrawingUtilities.h>
+#import "SSDrawingUtilities.h"
 
 const CGFloat ARROW_HEIGHT = 10.0f;
 const CGFloat ARROW_BASE = 21.0f;

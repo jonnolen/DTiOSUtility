@@ -4,6 +4,7 @@
 #import "DTAuthenticationPresenter.h"
 #import <libextobjc/EXTScope.h>
 
+
 NSString *const DTAuthenticationPresenterStartedAuthentication = @"DTAuthenticationPresenterStartedAuthentication";
 NSString *const DTAuthenticationPresenterFinishedAuthentication = @"DTAuthenticationPresenterFinishedAuthentication";
 @interface DTAuthenticationPresenter(){

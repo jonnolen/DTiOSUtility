@@ -6,12 +6,6 @@
 // project.
 
 
-// SSToolkit
-#define COCOAPODS_POD_AVAILABLE_SSToolkit
-#define COCOAPODS_VERSION_MAJOR_SSToolkit 1
-#define COCOAPODS_VERSION_MINOR_SSToolkit 0
-#define COCOAPODS_VERSION_PATCH_SSToolkit 4
-
 // libextobjc
 #define COCOAPODS_POD_AVAILABLE_libextobjc
 #define COCOAPODS_VERSION_MAJOR_libextobjc 0
