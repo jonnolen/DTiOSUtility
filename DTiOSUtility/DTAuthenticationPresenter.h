@@ -23,6 +23,7 @@ extern NSString *const DTAuthenticationPresenterFinishedAuthentication;
 @property (nonatomic, assign) UIWindowLevel authenticationWindowLevel;
 
 -(void)presentAuthentication;
--(void)presentAuthenticationWithContext:(id)context;
+-(void)presentAuthentication:(BOOL)animated;
+-(void)presentAuthenticationWithContext:(id)context animated:(BOOL)animated;
 @end
 

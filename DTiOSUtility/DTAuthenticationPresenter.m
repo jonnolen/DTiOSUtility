@@ -49,7 +49,7 @@ static DTAuthenticationPresenter *_sharedPresenter;
     [[NSNotificationCenter defaultCenter] removeObserver:didBecomeActiveObserver];
 }
 
--(void)presentAuthenticationWithContext:(id)context{
+-(void)presentAuthenticationWithContext:(id)context animated:(BOOL)animated{
     if (!presentedWindow && self.hasFactoryBlock){
         presentedWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
         
@@ -63,12 +63,15 @@ static DTAuthenticationPresenter *_sharedPresenter;
         [authenticationViewController addObserver:self forKeyPath:@"isFinished" options:0 context:nil];
         presentedWindow.rootViewController = authenticationViewController;
         presentedWindow.windowLevel = self.authenticationWindowLevel;
-        presentedWindow.alpha = 0.0;
+
         presentedWindow.hidden = NO;
         [presentedWindow makeKeyWindow];
-        [UIView animateWithDuration:.25 animations:^{
-            presentedWindow.alpha = 1.0;
-        }];
+        if (animated){
+            presentedWindow.alpha = 0.0;
+            [UIView animateWithDuration:.25 animations:^{
+                presentedWindow.alpha = 1.0;
+            }];
+        }
     }
     else{
         NSLog(@"Authentication already presented.");
@@ -78,8 +81,12 @@ static DTAuthenticationPresenter *_sharedPresenter;
 - (BOOL)hasFactoryBlock{
     return (self.authenticationViewControllerFactoryBlock || self.authenticationViewControllerFactoryBlockWithContext);
 }
+-(void)presentAuthentication:(BOOL)animated{
+    [self presentAuthenticationWithContext:nil animated:animated];
+}
+
 -(void)presentAuthentication{
-    [self presentAuthenticationWithContext:nil];
+    [self presentAuthentication:YES];
 }
 
 
