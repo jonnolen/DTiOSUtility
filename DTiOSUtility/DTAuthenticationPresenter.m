@@ -89,6 +89,9 @@ static DTAuthenticationPresenter *_sharedPresenter;
     [self presentAuthentication:YES];
 }
 
+-(BOOL)isPresented{
+    return (presentedWindow != nil);
+}
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
     if (object == authenticationViewController && [keyPath isEqualToString:@"isFinished"]){

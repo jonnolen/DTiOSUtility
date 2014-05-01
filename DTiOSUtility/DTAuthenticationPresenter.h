@@ -16,6 +16,7 @@ extern NSString *const DTAuthenticationPresenterFinishedAuthentication;
 +(instancetype)sharedAuthenticationPresenter;
 +(void)setSharedAuthenticationPresenter:(DTAuthenticationPresenter *)presenter;
 
+@property (nonatomic, readonly) BOOL isPresented;
 @property (nonatomic, strong) UIWindow *applicationWindow;
 @property (nonatomic, copy) UIViewController<DTAuthenticationPresenterViewController> *(^authenticationViewControllerFactoryBlock)(void);
 @property (nonatomic, copy) UIViewController<DTAuthenticationPresenterViewController> *(^authenticationViewControllerFactoryBlockWithContext)(id);
